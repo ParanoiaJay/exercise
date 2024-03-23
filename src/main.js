@@ -7,7 +7,8 @@ Vue.component(TypeNav.name,TypeNav)
 import router from '@/router'
 import vueRouter from "vue-router"
 
-
+import {reCategoryList} from '@/api';
+reCategoryList();
 Vue.config.productionTip = false
 Vue.prototype.$bus = new Vue()
 new Vue({
